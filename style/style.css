@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem
+}
+
+input {
+    font-size: 1rem;
+    padding: 0 0.4rem;
+}
+
+
+html {
+    font-size: 62.5%;
+    background: #fafafa;
+}
+
+#left img {
+    height: 90%;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 4rem;
+
+}
+
+#left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+}
+
+#left img {
+    border: solid 5px rgb(13, 13, 13, 0.9);
+    border-radius: 20px;
+
+}
+
+
+#img1,
+#img2,
+#img3 {
+    right: 5%;
+    top: 5%;
+    position: absolute;
+}
+
+#img1 {
+    right: 25%;
+    top: 10%
+}
+
+#img3 {
+    animation: slide 5s infinite ease-in;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+}
+
+#right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+
+#formulario {
+    margin-top: 2rem;
+    width: 300px;
+    align-items: center;
+    border: 1px solid rgb(218, 218, 218);
+    margin-bottom: 1rem;
+}
+
+img[alt="logo"] {
+    width: 100%;
+}
+
+input,
+button {
+    display: block;
+    width: 80%;
+    height: 3rem;
+    border: 1px solid gray;
+    margin: auto;
+    margin-top: 1rem;
+    background: rgba(132, 129, 129, 0.112);
+    border-radius: 0.8rem;
+}
+
+#enter_button {
+    background-color: #1b7fed;
+    color: white;
+    text-align: center;
+}
+
+#_ou_ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#_ou_ div {
+    border: 0.5px solid rgb(218, 216, 216);
+    width: 40%;
+}
+
+#enter_facebook {
+    display: flex;
+    justify-content: center;
+}
+
+#enter_facebook div {
+    color: #010080;
+    margin-left: 0.3rem;
+}
+
+#enter_facebook+div {
+    text-align: center;
+    color: #010080;
+    font-size: 1.2rem;
+}
+
+#cadastre_se {
+    width: 300px;
+    padding: 0.5rem 0;
+    border: 1px solid rgb(218, 218, 218);
+    text-align: center;
+
+}
+
+#obtenha_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 300px;
+}
+
+
+
+#obtenha_app div {
+    margin-bottom: 0.5rem;
+}
+
+#obtenha_app div a img {
+    height: 3.6rem;
+    width: 13rem;
+    padding: 0.4rem;
+}
+
+@media (max-width:720px) {
+    #left {
+        display: none;
+    }
+
+
+    #right,
+    #formulario,
+    #cadastre_se,
+    #obtenha_app {
+        width: 30rem;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:370px) {
+
+    #right,
+    #formulario,
+    #cadastre_se,
+    #obtenha_app {
+        width: 20rem;
+    }
+
+    #obtenha_app div {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+#footer {
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 2rem;
+
+}
+
+#footer span {
+    color: rgb(117, 111, 111);
+    margin: 0 0.9rem;
+}
